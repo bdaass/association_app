@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.association" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize other theme attributes as needed -->
+        <item name="colorPrimary">#00897B</item>
+        <item name="colorPrimaryVariant">#D81B60</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:navigationBarColor">#00897B</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- Custom button style -->
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">#FF0000</item> <!-- Change text color here -->
+    </style>
+
+</resources>

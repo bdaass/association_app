@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <!-- Placeholder for dynamically loaded pages -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="199dp">
+
+        <ScrollView
+            android:layout_width="384dp"
+            android:layout_height="723dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/dashtomarkaztebbi"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/bgsection1"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="@integer/material_motion_duration_long_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/dashtomaktaba"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dashtodour"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/bgsection3"/>
+
+                <Button
+                    android:id="@+id/dashtokashaf"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="75dp"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/bgsection6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dashtodrous" />
+
+                <Button
+                    android:id="@+id/dashtodrous"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    android:text="\n\n\n\nدروس الشيخ محمد مرعب"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dashtomaktaba"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/bgsection5"/>
+
+                <Button
+                    android:id="@+id/dashtomaahad"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dashtomarkaztebbi"
+                    android:background="@drawable/btn_3d"
+                    android:foreground="@drawable/bgsection2" />
+
+
+                <Button
+                    android:id="@+id/dashtodour"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dashtomaahad"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/bgsection4"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

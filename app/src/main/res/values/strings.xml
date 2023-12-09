@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">association_name</string>
+    <string name="title_home">Main</string>
+    <string name="title_dashboard">Sections</string>
+    <string name="title_contact">Contact us</string>
+    <string name="title_weare">We are</string>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo_cheikh"
+        android:layout_width="416dp"
+        android:layout_height="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s1_e1" />
+
+    <ScrollView
+        android:id="@+id/scrollViewPL"
+        android:layout_width="412dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayoutPL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_PL_1"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+
+                android:text="S1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/text_PL_2"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/margin_0"
+
+                android:text="S2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/text_PL_1"
+                app:layout_constraintStart_toStartOf="@+id/text_PL_1"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_1" />
+
+            <TextView
+                android:id="@+id/text_PL_3"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="@dimen/margin_0"
+                android:text="S3"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="@+id/text_PL_1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/text_PL_1"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_2" />
+
+            <TextView
+                android:id="@+id/text_PL_4"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/margin_0"
+                android:text="S4"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="@+id/text_PL_2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/text_PL_2"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_3" />
+
+            <TextView
+                android:id="@+id/text_PL_5"
+                android:layout_width="500dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/margin_0"
+                android:text="S5"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="@+id/text_PL_4"
+                app:layout_constraintHorizontal_bias="0.96"
+                app:layout_constraintStart_toStartOf="@+id/text_PL_4"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_4" />
+
+            <HorizontalScrollView
+                android:id="@+id/PL1"
+                android:layout_width="408dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toTopOf="@+id/PL2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.647"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <HorizontalScrollView
+                android:id="@+id/PL2"
+                android:layout_width="412dp"
+                android:layout_height="185dp"
+                app:layout_constraintBottom_toTopOf="@+id/text_PL_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_2" />
+
+            <HorizontalScrollView
+                android:id="@+id/PL3"
+                android:layout_width="397dp"
+                android:layout_height="184dp"
+                app:layout_constraintBottom_toTopOf="@+id/text_PL_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_3"/>
+
+            <HorizontalScrollView
+                android:id="@+id/PL4"
+                android:layout_width="397dp"
+                android:layout_height="184dp"
+                app:layout_constraintBottom_toTopOf="@+id/text_PL_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_4"
+                app:layout_constraintVertical_bias="1.0"/>
+
+            <HorizontalScrollView
+                android:id="@+id/PL5"
+                android:layout_width="397dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_PL_5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
